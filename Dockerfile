@@ -9,4 +9,6 @@ RUN apt update && \
 
 COPY clang-tidy.sh /clang-tidy.sh
 
+RUN chmod +x /clang-tidy.sh
+
 ENTRYPOINT ["/clang-tidy.sh"]
